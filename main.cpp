@@ -78,14 +78,15 @@ int main()
                 break;
  
             case 4: // Ver todos los datos (pocos) de un fichero
-                cout << "¿De cual Dispositivo quiere saber? Digite el nombre ";
+                cout << "¿De cual Dispositivo quiere saber? Digite el nombre";
                 cin >> textoTemporal;
                 for (i=0; i<numeroFichas; i++)
                     if (fichas[i].nombreFich == textoTemporal)
-                        cout << "Dispositivo: " << fichas[i].nombreFich
-                            << "; Consumo: " << fichas[i].tamaño
-                            << "; horas: " << fichas[i].horas
-                            << " Watts" << endl;
+                        cout <<  fichas[i].tamaño * fichas[i].horas << endl;
+                          // << "Dispositivo: " << fichas[i].nombreFich
+                          //  << "; Consumo: " << fichas[i].tamaño
+                          //  << "; horas: " << fichas[i].horas
+                          //  << " Watts" << endl;
                 break;
  
             case 5: // Salir: avisamos de que salimos
