@@ -1,5 +1,5 @@
 // Practica 3
-//Curso C++ FOD
+// Curso C++ FOD
 // Realizado por Alejandro Monge Brenes
 // Programa para el control del consumo energético
 
@@ -36,7 +36,8 @@ int main()
         cout << "2.- Mostrar todos los dispositivos" << endl;
         cout << "3.- Mostrar Dispositivos de ALTO CONSUMO" << endl;
         cout << "4.- Ver datos de un dispositivo" << endl;
-        cout << "5.- Salir" << endl;
+        cout << "5.- Consumo por Cantidad de Horas" << endl;
+        cout << "6.- Salir" << endl;
  
         cin >> opcion;
  
@@ -83,7 +84,16 @@ int main()
                             << " Watts" << endl;
                 break;
  
-            case 5: // Salir: avisamos de que salimos
+            case 5: // Consumo del dispositivo por hora
+                cout << "¿De cual Dispositivo quiere saber?";
+                cin >> textoTemporal;
+                for (i=0; i<numeroFichas; i++)
+                    if (fichas[i].nombreFich == textoTemporal)
+                        cout << "Dispositivo: " << fichas[i].nombreFich
+                            << "; Consumo: " << fichas[i].tamaño
+                            << " Watts" << endl;
+
+            case 6: // Salir: avisamos de que salimos
                 cout << "Fin del programa" << endl;
                 break;
  
@@ -91,7 +101,7 @@ int main()
                 cout << "Opción desconocida!" << endl;
                 break;
         }
-    } while (opcion != 5);  // Si la opcion es 5, terminamos
+    } while (opcion != 6);  // Si la opcion es 6, terminamos
  
     return 0;
 }
