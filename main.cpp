@@ -36,7 +36,7 @@ int main()
         cout << "1.- Añadir Dispositivo" << endl;
         cout << "2.- Mostrar todos los dispositivos" << endl;
         cout << "3.- Mostrar Dispositivos de ALTO CONSUMO" << endl;
-        cout << "4.- Ver datos de un dispositivo" << endl;
+        cout << "4.- Consumo total por dispositivo" << endl;
         cout << "5.- Salir" << endl;
  
         cin >> opcion;
@@ -63,12 +63,12 @@ int main()
                 for (i=0; i<numeroFichas; i++)
                     cout << "Dispositivo: " << fichas[i].nombreFich
                         << "; Consumo: " << fichas[i].tamaño
-                        << "; horas: " << fichas[i].horas
-                        << " Watts" << endl;
+                        << " Watts" 
+                        << "; horas: " << fichas[i].horas << endl;
                 break;
  
             case 3: // Mostrar según el tamaño
-                cout << "¿A partir de cuál Consumo desea saber? ";
+                cout << "¿A partir de cuál Consumo desea saber?  Digite la potencia máxima esperada ";
                 cin >> numeroTemporal;
                 for (i=0; i<numeroFichas; i++)
                     if (fichas[i].tamaño >= numeroTemporal)
