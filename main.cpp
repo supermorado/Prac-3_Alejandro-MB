@@ -32,6 +32,7 @@ int main()
     {
         // Menu principal
         cout << endl;
+        cout << "PROGRAMA DE REGISTRO ENERGÉTICO" << endl;
         cout << "Escoja una opción:" << endl;
         cout << "1.- Añadir Dispositivo" << endl;
         cout << "2.- Mostrar todos los dispositivos" << endl;
@@ -78,15 +79,11 @@ int main()
                 break;
  
             case 4: // Ver todos los datos (pocos) de un fichero
-                cout << "¿De cual Dispositivo quiere saber? Digite el nombre";
+                cout << "¿De cual Dispositivo quiere saber? Digite el nombre"<< endl;
                 cin >> textoTemporal;
                 for (i=0; i<numeroFichas; i++)
                     if (fichas[i].nombreFich == textoTemporal)
-                        cout <<  fichas[i].tamaño * fichas[i].horas << endl;
-                          // << "Dispositivo: " << fichas[i].nombreFich
-                          //  << "; Consumo: " << fichas[i].tamaño
-                          //  << "; horas: " << fichas[i].horas
-                          //  << " Watts" << endl;
+                        cout <<  fichas[i].tamaño * fichas[i].horas << " Watts/hora"<< endl;
                 break;
  
             case 5: // Salir: avisamos de que salimos
