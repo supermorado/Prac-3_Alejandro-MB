@@ -63,6 +63,7 @@ int main()
                 for (i=0; i<numeroFichas; i++)
                     cout << "Dispositivo: " << fichas[i].nombreFich
                         << "; Consumo: " << fichas[i].tamaño
+                        << "; horas: " << fichas[i].horas
                         << " Watts" << endl;
                 break;
  
@@ -83,6 +84,7 @@ int main()
                     if (fichas[i].nombreFich == textoTemporal)
                         cout << "Dispositivo: " << fichas[i].nombreFich
                             << "; Consumo: " << fichas[i].tamaño
+                            << "; horas: " << fichas[i].horas
                             << " Watts" << endl;
                 break;
  
