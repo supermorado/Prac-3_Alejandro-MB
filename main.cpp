@@ -2,6 +2,8 @@
 //Curso C++ FOD
 // Realizado por Alejandro Monge Brenes
 // Programa para el control del consumo energético
+
+//El objetivo del programa es permitir al usuario registrar el inventario de dispositivos que hay en la casa. Una vez que se tiene el inventario, se debe introducir la cantidad de horas que estuvo encendido cada dispositivo para luego calcular el total de consumo que tuvo la casa durante el mes.
  
 
 #include <iostream>
