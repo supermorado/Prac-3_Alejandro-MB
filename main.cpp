@@ -68,7 +68,7 @@ int main()
                 break;
  
             case 3: // Mostrar según el tamaño
-                cout << "¿A partir de cuál Consumo desea saber?  Digite la potencia máxima esperada ";
+                cout << "¿A partir de cuál Consumo desea saber?  Digite la potencia máxima esperada "; 
                 cin >> numeroTemporal;
                 for (i=0; i<numeroFichas; i++)
                     if (fichas[i].tamaño >= numeroTemporal)
@@ -78,7 +78,7 @@ int main()
                 break;
  
             case 4: // Ver todos los datos (pocos) de un fichero
-                cout << "¿De cual Dispositivo quiere saber?";
+                cout << "¿De cual Dispositivo quiere saber? Digite el nombre ";
                 cin >> textoTemporal;
                 for (i=0; i<numeroFichas; i++)
                     if (fichas[i].nombreFich == textoTemporal)
